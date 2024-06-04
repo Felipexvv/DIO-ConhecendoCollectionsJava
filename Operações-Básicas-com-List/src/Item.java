@@ -16,9 +16,15 @@ public class Item {
     public Double getPreco() {
         return preco;
     }
-    
+
     public int getQuantidade() {
         return quantidade;
+    }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "Nome item: " + nome + " Preço: " + preco + " Quantidade: " + quantidade;
     }
 
 }

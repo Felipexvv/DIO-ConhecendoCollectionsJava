@@ -36,4 +36,26 @@ public class CarrinhoDeCompras {
     public void exibirItens(){
         System.out.println(itemList);
     }
+
+
+    public static void main(String[] args) {
+        CarrinhoDeCompras carrinhoDeCompras = new CarrinhoDeCompras();
+
+        System.out.println("O valor total do carrinho é " + carrinhoDeCompras.calcularValorTotal());
+
+        carrinhoDeCompras.adicionarItem("Bolo", 20, 5);
+        carrinhoDeCompras.adicionarItem("Hamburger", 25, 3);
+        carrinhoDeCompras.adicionarItem("Bolo", 10, 6);
+
+        System.out.println("O valor total do carrinho é " + carrinhoDeCompras.calcularValorTotal());
+
+        carrinhoDeCompras.removerItem("Hamburger");
+
+        System.out.println("O valor total do carrinho é " + carrinhoDeCompras.calcularValorTotal());
+
+        carrinhoDeCompras.exibirItens();;
+
+
+
+    }
 }
